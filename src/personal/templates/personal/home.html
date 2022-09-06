@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+  <main role="main" class=" cover-container inner cover px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <h1 class="cover-heading ">Aarya's Blog</h1>
+    <p class="lead text-center">This blog is a testament to one of the greatest adventure stories you will ever witness. A story of happiness,hope,passion and heartbreak. From my first print statement to the gut wrenching pain that is recursion, all my experiences will be published on this platform to be viewed by the world. </p>
+  </main>
+<div class="container">
+	<div class="d-flex flex-column">
+		
+		<h3>Registered users:</h3>
+		{% for account in accounts %}
+				<p>{{account}}</p>
+			{% endfor %}
+	</div>
+	
+</div>
+
+
+
+{% endblock content %}
